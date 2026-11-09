@@ -1,0 +1,20 @@
+{
+  "name": "aviso-contexto",
+  "version": "0.1.0",
+  "description": "Avisa cuando el contexto de la sesión principal pasa de 600.000 tokens y sugiere compactar; al ocultarlo, vuelve a avisar cada 100.000 más.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "warnAtTokens": {
+      "type": "number",
+      "title": "Umbral de aviso (tokens)",
+      "description": "Avisa cuando el contexto de la sesión principal llega a esta cantidad de tokens.",
+      "default": 600000
+    },
+    "snoozeStepTokens": {
+      "type": "number",
+      "title": "Paso al ocultar (tokens)",
+      "description": "Al pulsar «Ocultar», el aviso vuelve cuando el contexto sube este tanto más: con 600.000 y 100.000, a los 700.000, luego a los 800.000…",
+      "default": 100000
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "aviso-contexto",
+  "owner": { "name": "Ramón" },
+  "plugins": [
+    {
+      "name": "aviso-contexto",
+      "source": "./",
+      "description": "Avisa cuando el contexto de la sesión pasa de 600.000 tokens, con un botón para compactar y otro para posponer el aviso."
+    }
+  ]
+}
